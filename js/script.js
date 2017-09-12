@@ -18,6 +18,16 @@ $(document).ready(function(){
     var weatherData = $.getJSON(`${weatherAPI}lat=${lat}&lon=${lon}&APPID=${apiKEY}`);
 
     weatherData.then(function(response, status){
+      var cityName = document.querySelector(".city");
+      cityName.innerText = city;
+
+      var stateName = document.querySelector(".state");
+      stateName.innerText = state;
+
+      var temperature = document.querySelector(".temp");
+      temperature.innerText = response.main.temp * (9/5) - 459.67;
+
+
       // Insert your data into the html! hint: log the api response and see what data is available.
       console.log(response);
     });
