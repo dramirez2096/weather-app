@@ -2,7 +2,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css);
 
 body {
-  background: #FFF;
+  background: #0598ED;
 }
 
 *,
@@ -30,6 +30,7 @@ button:hover {
 	font-size: 80px;
 	display: block;
 	text-align: center;
+  height: 100%;
 }
 
 .container {
@@ -43,8 +44,8 @@ button:hover {
 .weather-machine {
   width: 50%;
   margin: 100px auto 50px;
-  background: #F9F9F9;
-  border: 1px solid #DDD;
+  background: transparent;
+  border: none;
   display: flex;
   flex-direction: column;
 }
@@ -58,11 +59,12 @@ button:hover {
   padding: 50px;
   padding-top: 10px;
   font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 
 .meta-data {
   width: 100%;
-  background: #B2C0CD;
+  background: transparent;
   height: 200px;
   display: inline-block;
   text-align: center;
@@ -82,6 +84,5 @@ input:focus {
 }
 
 img {
-  height: 80px;
-  width: 80px;
+  height: 100%;
 }
