@@ -25,8 +25,7 @@ $(document).ready(function(){
       stateName.innerText = state;
 
       var temperature = document.querySelector(".temp");
-      temperature.innerText = response.main.temp * (9/5) - 459.67;
-
+      temperature.innerText = Math.round (response.main.temp * (9/5) - 459.67);
 
       // Insert your data into the html! hint: log the api response and see what data is available.
       console.log(response);
