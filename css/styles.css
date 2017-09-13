@@ -61,6 +61,9 @@ button:hover {
   font-family: 'Roboto', sans-serif;
   color: #fff;
 }
+h2{
+  font-weight: 300;
+}
 
 .meta-data {
   width: 100%;
